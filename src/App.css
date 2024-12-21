@@ -1,0 +1,55 @@
+/* Global styling for centering text */
+.App {
+  text-align: center;
+}
+
+/* Styling for the logo, with responsiveness */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  /* Ensure the logo spins only when the user prefers it */
+}
+
+/* Enhanced motion handling with media query */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header section with a dark background and flexbox layout */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+/* Styled links with a bright color */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for the links */
+.App-link:hover {
+  color: #21a1f1;
+  text-decoration: underline;
+}
+
+/* Keyframe animation for spinning the logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
